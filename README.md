@@ -35,8 +35,10 @@ default):
 Installation
 ------------
 
-To install the extension, you can run the included
-`build_using_closure_compiler.sh` script (which requires the
+To install the extension, you can either visit
+[its page](https://chrome.google.com/webstore/detail/virtual-desktops/migbdolpkobiafpigleooabjcbpkcdpd)
+on the Chrome Web Store or run the included `build_using_closure_compiler.sh`
+script (which requires the
 [Closure compiler](https://developers.google.com/closure/compiler/))
 and then load it into Chrome as an
 [unpacked extension](https://developer.chrome.com/extensions/getstarted).
