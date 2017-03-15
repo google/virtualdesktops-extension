@@ -7,44 +7,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
    width="128"
    height="128"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="New document 1">
+   id="svg2">
   <defs
      id="defs4" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="4"
-     inkscape:cx="75.561902"
-     inkscape:cy="70.684148"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="true"
-     inkscape:window-width="1218"
-     inkscape:window-height="831"
-     inkscape:window-x="290"
-     inkscape:window-y="188"
-     inkscape:window-maximized="0">
-    <inkscape:grid
-       type="xygrid"
-       id="grid2985"
-       empspacing="4"
-       visible="true"
-       enabled="true"
-       snapvisiblegridlinesonly="true"
-       spacingx="4px"
-       spacingy="4px" />
-  </sodipodi:namedview>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -58,54 +26,48 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-924.36217)">
+     transform="translate(0,-924.36217)"
+     id="layer1">
     <rect
-       style="fill:#800000;stroke:#000000;stroke-opacity:1"
-       id="rect2987-6-6"
        width="104"
        height="47.999989"
+       ry="8"
        x="8"
        y="932.36218"
-       ry="8" />
+       id="rect2987-6-6"
+       style="fill:#800000;stroke:#000000;stroke-opacity:1" />
     <rect
-       style="fill:#000080;stroke:#000000;stroke-opacity:1"
-       id="rect3796"
        width="104"
        height="47.999989"
+       ry="8"
        x="8"
        y="988.36218"
-       ry="8" />
+       id="rect3796"
+       style="fill:#000080;stroke:#000000;stroke-opacity:1" />
     <rect
-       style="fill:#808000;stroke:#000000;stroke-opacity:1"
-       id="rect2987-6"
        width="48"
        height="103.99998"
+       ry="8"
        x="72"
        y="940.36218"
-       ry="8" />
+       id="rect2987-6"
+       style="fill:#808000;stroke:#000000;stroke-opacity:1" />
     <rect
-       style="fill:#cccccc;stroke:#000000;stroke-opacity:1"
-       id="rect2987"
        width="48"
        height="103.99998"
+       ry="8"
        x="16"
        y="940.36218"
-       ry="8" />
+       id="rect2987"
+       style="fill:#cccccc;stroke:#000000;stroke-opacity:1" />
     <path
-       style="fill:#000000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 44,40 4,-4 4,4 4,0 0,-4 -4,-4 4,-4 0,-4 -4,0 -4,4 -4,-4 -4,0 0,4 4,4 -4,4 0,4 z"
-       id="path3800"
-       inkscape:connector-curvature="0"
        transform="translate(0,924.36217)"
-       sodipodi:nodetypes="ccccccccccccccccc" />
+       id="path3800"
+       style="fill:#000000;stroke:none" />
     <path
-       style="fill:#000000;stroke:none"
        d="m 100,964.36217 4,-4 4,4 4,0 0,-4 -4,-4 4,-4 0,-4 -4,0 -4,4 -4,-4 -4,0 0,4 4,4 -4,4 0,4 z"
        id="path3800-1"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccccccccccccc" />
+       style="fill:#000000;stroke:none" />
   </g>
 </svg>
