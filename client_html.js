@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Google Inc. All Rights Reserved.
+ * Copyright 2018 Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -161,7 +161,9 @@ function createButton(r, className, text, title, keydown, action) {
   b.classList.add(className);
   b.title = title;
   var s = document.createElement('span');
-  s.appendChild(document.createTextNode(text));
+  var p = document.createElement('span');
+  p.appendChild(document.createTextNode(text));
+  s.appendChild(p)
   b.appendChild(s);
   d.appendChild(b);
   c.appendChild(d);
