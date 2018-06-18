@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Google Inc. All Rights Reserved.
+ * Copyright 2018 Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -85,6 +85,31 @@ virtualdesktops.settings.setColumns = function(n) {
   window.localStorage['columns'] = n;
 };
 
+
+/**
+ * Returns the configured shortcut grouping mode.
+ * The configured value is mapped to a supported value on reading, not on
+ * writing, to allow for updates to the extension to have a different values.
+ * @package
+ * @return {number}
+ */
+virtualdesktops.settings.getGroupBy = function() {
+  var groupBy = window.localStorage['group-by'];
+  if (groupBy != 'size' && groupBy != 'origin') {
+    return 'size';
+  }
+  return groupBy;
+};
+
+
+/**
+ * Sets the number of tiling desktops.
+ * @package
+ * @param {number} n Number of desktops.
+ */
+virtualdesktops.settings.setGroupBy = function(groupBy) {
+  window.localStorage['group-by'] = groupBy;
+};
 
 /**
  * Returns the configured number of virtual desktops.

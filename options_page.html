@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <!--
-Copyright 2015 Google Inc. All Rights Reserved.
+Copyright 2018 Google Inc. All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -29,6 +29,12 @@ limitations under the License.
       <label for="columns">Columns:</label>
       <input type="number" min="1" id="columns" size="8">
       <br>
+      <label for="group-by">Group window position shortcuts by:</label>
+      <select id="group-by">
+        <option name="size">size</option>
+        <option name="origin">origin</option>
+      </select>
+      <br>
       <label for="desktops">Desktops:</label>
       <input type="number" min="1" id="desktops" size="8">
       <br>
@@ -36,12 +42,12 @@ limitations under the License.
       <button id="save">Save</button>
     </p>
     <p>
-      To assign keyboard shortcuts, go to:
+      To assign the main keyboard shortcut, go to:
       <br>
       <button id="configure-commands">Keyboard shortcuts...</button>
     </p>
     <p>
-      Copyright 2015 Google Inc. All Rights Reserved.<br>
+      Copyright 2018 Google Inc. All Rights Reserved.<br>
       Licensed under the <a href="LICENSE">Apache License, Version 2.0</a>.<br>
       Source code avialable on
       <a href="https://github.com/google/virtualdesktops-extension">GitHub</a>.

@@ -5,7 +5,7 @@
     "48": "icons/virtualdesktops48.png",
     "128": "icons/virtualdesktops128.png"
   },
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Place Chrome windows on virtual desktops using a tiling grid",
   "permissions": [],
   "background": {

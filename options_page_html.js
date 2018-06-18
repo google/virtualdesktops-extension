@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 Google Inc. All Rights Reserved.
+ * Copyright 2018 Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,6 +38,10 @@ function saveOptions() {
   virtualdesktops.settings.setColumns(parseInt(columns.value, 10));
   columns.value = virtualdesktops.settings.getColumns();
 
+  var groupBy = document.getElementById('group-by');
+  virtualdesktops.settings.setGroupBy(groupBy.value);
+  groupBy.value = virtualdesktops.settings.getGroupBy();
+
   var desktops = document.getElementById('desktops');
   virtualdesktops.settings.setDesktops(parseInt(desktops.value, 10));
   desktops.value = virtualdesktops.settings.getDesktops();
@@ -68,6 +72,9 @@ function init() {
 
   var columns = document.getElementById('columns');
   columns.value = virtualdesktops.settings.getColumns();
+
+  var groupBy = document.getElementById('group-by');
+  groupBy.value = virtualdesktops.settings.getGroupBy();
 
   var desktops = document.getElementById('desktops');
   desktops.value = virtualdesktops.settings.getDesktops();

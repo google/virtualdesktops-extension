@@ -103,7 +103,11 @@ function mapGroupIndexCount(n) {
  * @return {number} The top window grid row to move a window to.
  */
 function rowFor(i) {
-  return mapGroupIndex(i, virtualdesktops.settings.getRows()).index;
+  if (virtualdesktops.settings.getGroupBy() == 'size') {
+    return mapGroupIndex(i, virtualdesktops.settings.getRows()).index;
+  } else if (virtualdesktops.settings.getGroupBy() == 'origin') {
+    return mapGroupIndex(i, virtualdesktops.settings.getRows()).group;
+  }
 }
 
 
@@ -113,7 +117,11 @@ function rowFor(i) {
  * @return {number} The height in window grid units to resize a window to.
  */
 function heightFor(i) {
-  return mapGroupIndex(i, virtualdesktops.settings.getRows()).group + 1;
+  if (virtualdesktops.settings.getGroupBy() == 'size') {
+    return mapGroupIndex(i, virtualdesktops.settings.getRows()).group + 1;
+  } else if (virtualdesktops.settings.getGroupBy() == 'origin') {
+    return mapGroupIndex(i, virtualdesktops.settings.getRows()).index + 1;
+  }
 }
 
 
@@ -123,7 +131,11 @@ function heightFor(i) {
  * @return {number} The left window grid column to move a window to.
  */
 function columnFor(j) {
-  return mapGroupIndex(j, virtualdesktops.settings.getColumns()).index;
+  if (virtualdesktops.settings.getGroupBy() == 'size') {
+    return mapGroupIndex(j, virtualdesktops.settings.getColumns()).index;
+  } else if (virtualdesktops.settings.getGroupBy() == 'origin') {
+    return mapGroupIndex(j, virtualdesktops.settings.getColumns()).group;
+  }
 }
 
 
@@ -133,7 +145,11 @@ function columnFor(j) {
  * @return {number} The width in window grid units to resize a window to.
  */
 function widthFor(j) {
-  return mapGroupIndex(j, virtualdesktops.settings.getColumns()).group + 1;
+  if (virtualdesktops.settings.getGroupBy() == 'size') {
+    return mapGroupIndex(j, virtualdesktops.settings.getColumns()).group + 1;
+  } else if (virtualdesktops.settings.getGroupBy() == 'origin') {
+    return mapGroupIndex(j, virtualdesktops.settings.getColumns()).index + 1;
+  }
 }
 
 
