@@ -91,7 +91,7 @@ virtualdesktops.settings.setColumns = function(n) {
  * The configured value is mapped to a supported value on reading, not on
  * writing, to allow for updates to the extension to have a different values.
  * @package
- * @return {number}
+ * @return {string}
  */
 virtualdesktops.settings.getGroupBy = function() {
   var groupBy = window.localStorage['group-by'];
@@ -103,9 +103,9 @@ virtualdesktops.settings.getGroupBy = function() {
 
 
 /**
- * Sets the number of tiling desktops.
+ * Sets the shortcut grouping mode.
  * @package
- * @param {number} n Number of desktops.
+ * @param {string} groupBy Grouping mode.
  */
 virtualdesktops.settings.setGroupBy = function(groupBy) {
   window.localStorage['group-by'] = groupBy;
